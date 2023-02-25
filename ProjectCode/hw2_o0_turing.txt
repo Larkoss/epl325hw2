@@ -1,0 +1,360 @@
+Threads: 1
+
+Simulation Time:	      10.014338
+
+Simulation Time:	      10.048064
+
+Simulation Time:	       9.961030
+
+Simulation Time:	      10.105110
+Threads: 2
+
+Simulation Time:	      10.140989
+
+Simulation Time:	       6.819656
+
+Simulation Time:	       7.223643
+
+Simulation Time:	       7.596832
+Threads: 3
+
+Simulation Time:	       9.972988
+
+Simulation Time:	       5.069863
+
+Simulation Time:	       4.728809
+
+Simulation Time:	       4.903112
+Threads: 4
+
+Simulation Time:	       9.917702
+
+Simulation Time:	       3.814127
+
+Simulation Time:	       3.739384
+
+Simulation Time:	       3.745431
+Threads: 5
+
+Simulation Time:	      10.613427
+
+Simulation Time:	       3.486508
+
+Simulation Time:	       3.765554
+
+Simulation Time:	       3.594346
+Threads: 6
+
+Simulation Time:	       9.915812
+
+Simulation Time:	       3.118893
+
+Simulation Time:	       3.145663
+
+Simulation Time:	       3.188857
+Threads: 7
+
+Simulation Time:	      10.157936
+
+Simulation Time:	       2.987643
+
+Simulation Time:	       3.092845
+
+Simulation Time:	       2.989048
+Threads: 8
+
+Simulation Time:	      10.358947
+
+Simulation Time:	       2.579359
+
+Simulation Time:	       2.541330
+
+Simulation Time:	       2.669344
+Threads: 9
+
+Simulation Time:	      10.107918
+
+Simulation Time:	       2.637932
+
+Simulation Time:	       2.603740
+
+Simulation Time:	       2.561153
+Threads: 10
+
+Simulation Time:	      10.386306
+
+Simulation Time:	       2.530628
+
+Simulation Time:	       2.430646
+
+Simulation Time:	       2.497894
+Threads: 11
+
+Simulation Time:	       9.954277
+
+Simulation Time:	       2.373054
+
+Simulation Time:	       2.428215
+
+Simulation Time:	       2.366711
+Threads: 12
+
+Simulation Time:	      10.392773
+
+Simulation Time:	       2.527547
+
+Simulation Time:	       2.564166
+
+Simulation Time:	       2.574641
+Threads: 13
+
+Simulation Time:	      10.265133
+
+Simulation Time:	       2.406796
+
+Simulation Time:	       2.343802
+
+Simulation Time:	       2.316632
+Threads: 14
+
+Simulation Time:	      10.641467
+
+Simulation Time:	       2.277841
+
+Simulation Time:	       2.253260
+
+Simulation Time:	       2.312617
+Threads: 15
+
+Simulation Time:	       9.869995
+
+Simulation Time:	       2.260522
+
+Simulation Time:	       2.332644
+
+Simulation Time:	       2.428255
+Threads: 16
+
+Simulation Time:	       9.814642
+
+Simulation Time:	       2.320767
+
+Simulation Time:	       2.387216
+
+Simulation Time:	       2.415050
+Threads: 17
+
+Simulation Time:	       9.967321
+
+Simulation Time:	       2.436647
+
+Simulation Time:	       2.456192
+
+Simulation Time:	       2.488261
+Threads: 18
+
+Simulation Time:	      10.637706
+
+Simulation Time:	       2.109211
+
+Simulation Time:	       2.025071
+
+Simulation Time:	       2.049153
+Threads: 19
+
+Simulation Time:	      10.560032
+
+Simulation Time:	       2.459031
+
+Simulation Time:	       2.343542
+
+Simulation Time:	       2.331060
+Threads: 20
+
+Simulation Time:	       9.926152
+
+Simulation Time:	       1.925036
+
+Simulation Time:	       1.968600
+
+Simulation Time:	       1.989242
+Threads: 21
+
+Simulation Time:	      10.361811
+
+Simulation Time:	       2.351888
+
+Simulation Time:	       2.275924
+
+Simulation Time:	       2.364903
+Threads: 22
+
+Simulation Time:	       9.814586
+
+Simulation Time:	       1.992070
+
+Simulation Time:	       2.015620
+
+Simulation Time:	       2.009424
+Threads: 23
+
+Simulation Time:	      10.107774
+
+Simulation Time:	       2.224381
+
+Simulation Time:	       2.155604
+
+Simulation Time:	       2.281420
+Threads: 24
+
+Simulation Time:	      10.045976
+
+Simulation Time:	       2.141337
+
+Simulation Time:	       2.175747
+
+Simulation Time:	       2.168055
+Threads: 25
+
+Simulation Time:	      10.055771
+
+Simulation Time:	       1.817237
+
+Simulation Time:	       1.856511
+
+Simulation Time:	       1.881662
+Threads: 26
+
+Simulation Time:	       9.999202
+
+Simulation Time:	       2.133765
+
+Simulation Time:	       2.094791
+
+Simulation Time:	       2.102685
+Threads: 27
+
+Simulation Time:	      10.012241
+
+Simulation Time:	       2.034827
+
+Simulation Time:	       2.080957
+
+Simulation Time:	       2.097064
+Threads: 28
+
+Simulation Time:	      10.703028
+
+Simulation Time:	       1.964653
+
+Simulation Time:	       2.067054
+
+Simulation Time:	       1.974801
+Threads: 29
+
+Simulation Time:	      10.847531
+
+Simulation Time:	       2.027551
+
+Simulation Time:	       2.058275
+
+Simulation Time:	       2.080920
+Threads: 30
+
+Simulation Time:	      10.081402
+
+Simulation Time:	       1.998014
+
+Simulation Time:	       2.013366
+
+Simulation Time:	       2.086149
+Threads: 31
+
+Simulation Time:	      10.634530
+
+Simulation Time:	       2.031385
+
+Simulation Time:	       2.037063
+
+Simulation Time:	       2.152028
+Threads: 32
+
+Simulation Time:	       9.959960
+
+Simulation Time:	       2.192139
+
+Simulation Time:	       2.289456
+
+Simulation Time:	       2.561474
+Threads: 33
+
+Simulation Time:	      10.125222
+
+Simulation Time:	       2.667424
+
+Simulation Time:	       2.498191
+
+Simulation Time:	       2.484951
+Threads: 34
+
+Simulation Time:	      10.265778
+
+Simulation Time:	       2.888556
+
+Simulation Time:	       2.423848
+
+Simulation Time:	       2.441146
+Threads: 35
+
+Simulation Time:	      10.070829
+
+Simulation Time:	       2.857959
+
+Simulation Time:	       2.425257
+
+Simulation Time:	       2.397567
+Threads: 36
+
+Simulation Time:	      10.275169
+
+Simulation Time:	       2.905380
+
+Simulation Time:	       2.418560
+
+Simulation Time:	       2.427385
+Threads: 37
+
+Simulation Time:	      10.153299
+
+Simulation Time:	       2.887159
+
+Simulation Time:	       2.494929
+
+Simulation Time:	       2.466498
+Threads: 38
+
+Simulation Time:	      10.684345
+
+Simulation Time:	       3.200227
+
+Simulation Time:	       2.570882
+
+Simulation Time:	       2.518143
+Threads: 39
+
+Simulation Time:	       9.933158
+
+Simulation Time:	       2.799289
+
+Simulation Time:	       2.567658
+
+Simulation Time:	       2.568728
+Threads: 40
+
+Simulation Time:	      10.665508
+
+Simulation Time:	       2.934492
+
+Simulation Time:	       2.555004
+
+Simulation Time:	       2.514253

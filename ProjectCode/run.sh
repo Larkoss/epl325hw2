@@ -7,9 +7,9 @@ rm ./outputs/*
 	#Number of Bodies
 	for ((j=5; j<=200; j+=50 ))
 		do
-			gcc -Werror -Wall -O3 -lm n-body_std.c
+			gcc -Werror -Wall -O3 -lm -fopenmp n-body_std.c
 				./a.out $i $j
-			gcc -DDEBUG -Werror -Wall -O3 -lm n-body_std.c
+			gcc -DDEBUG -Werror -Wall -O3 -lm -fopenmp n-body_std.c
 				./a.out $i $j 2>> ./outputs/collisions.txt
 			gnuplot -e "numberOfBodies  = $j; outputFile = './outputs/output-$i-$j.gif'" plot3D.gpl
 		done

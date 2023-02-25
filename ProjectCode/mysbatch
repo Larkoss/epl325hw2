@@ -1,0 +1,18 @@
+#!/bin/bash
+#SBATCH --partition=CSUG
+#SBATCH --nodes=1
+#SBATCH --time=1:00:00
+#SBATCH --ntasks=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=40
+#SBATCH --job-name=count18
+
+gcc -fopenmp -Werror -Wall -O3 -lm -o hw2_o3 n-body_std.c
+gcc -fopenmp -Werror -Wall -O0 -lm -o hw2_o0 n-body_std.c
+
+thread_num=1
+for thread_num in {1..40}
+do
+    ./hw2_o3 10000 200 $thread_num >> hw2_o3.txt
+    ./hw2_o0 10000 200 $thread_num >> hw2_o0.txt
+done
