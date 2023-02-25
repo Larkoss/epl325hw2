@@ -57,38 +57,38 @@ void initiateSystemRND(int bodies)
 	}
 }
 
-void bubbleSort(int arr1[], int arr2[], int n)
+void bubblesort(int t1[], int t2[], int n)
 {
 	int i, j, temp;
 	for (i = 0; i < n - 1; i++)
 	{
 		for (j = 0; j < n - i - 1; j++)
 		{
-			if (arr1[j] > arr1[j + 1])
+			if (t1[j] > t1[j + 1])
 			{
-				// swap elements in arr1
-				temp = arr1[j];
-				arr1[j] = arr1[j + 1];
-				arr1[j + 1] = temp;
+				// swap elements in t1
+				temp = t1[j];
+				t1[j] = t1[j + 1];
+				t1[j + 1] = temp;
 
-				// swap corresponding elements in arr2
-				temp = arr2[j];
-				arr2[j] = arr2[j + 1];
-				arr2[j + 1] = temp;
+				// swap corresponding elements in t2
+				temp = t2[j];
+				t2[j] = t2[j + 1];
+				t2[j + 1] = temp;
 			}
-			else if (arr1[j] == arr1[j + 1])
+			else if (t1[j] == t1[j + 1])
 			{
-				if (arr2[j] > arr2[j + 1])
+				if (t2[j] > t2[j + 1])
 				{
-					// swap elements in arr1
-					temp = arr1[j];
-					arr1[j] = arr1[j + 1];
-					arr1[j + 1] = temp;
+					// swap elements in t1
+					temp = t1[j];
+					t1[j] = t1[j + 1];
+					t1[j + 1] = temp;
 
-					// swap corresponding elements in arr2
-					temp = arr2[j];
-					arr2[j] = arr2[j + 1];
-					arr2[j + 1] = temp;
+					// swap corresponding elements in t2
+					temp = t2[j];
+					t2[j] = t2[j + 1];
+					t2[j + 1] = temp;
 				}
 			}
 		}
@@ -120,8 +120,8 @@ void resolveCollisions()
 
 void resolveCollisions_static(int number_of_threads)
 {
-	int *arr = (int *)malloc(50000 * sizeof(int));
-	int *arr2 = (int *)malloc(50000 * sizeof(int));
+	int *t1 = (int *)malloc(50000 * sizeof(int));
+	int *t2 = (int *)malloc(50000 * sizeof(int));
 
 	int i, j, cnt = 0;
 	double dx, dy, dz, md;
@@ -141,28 +141,28 @@ void resolveCollisions_static(int number_of_threads)
 #pragma omp critical
 				{
 
-					*(arr + cnt) = i;
-					*(arr2 + cnt) = j;
+					*(t1 + cnt) = i;
+					*(t2 + cnt) = j;
 					cnt++;
 				}
 			}
 		}
 	}
 	// printf(" %d",cnt);
-	bubbleSort(arr, arr2, cnt);
+	bubblesort(t1, t2, cnt);
 	for (i = 0; i < cnt; i++)
 	{
 		// Swap Velocities
-		vector temp = velocities[arr[i]];
-		velocities[arr[i]] = velocities[arr2[i]];
-		velocities[arr2[i]] = temp;
+		vector temp = velocities[t1[i]];
+		velocities[t1[i]] = velocities[t2[i]];
+		velocities[t2[i]] = temp;
 	}
 }
 
 void resolveCollisions_dynamic(int number_of_threads)
 {
-	int *arr = (int *)malloc(50000 * sizeof(int));
-	int *arr2 = (int *)malloc(50000 * sizeof(int));
+	int *t1 = (int *)malloc(50000 * sizeof(int));
+	int *t2 = (int *)malloc(50000 * sizeof(int));
 
 	int i, j, cnt = 0;
 	double dx, dy, dz, md;
@@ -182,28 +182,28 @@ void resolveCollisions_dynamic(int number_of_threads)
 #pragma omp critical
 				{
 
-					*(arr + cnt) = i;
-					*(arr2 + cnt) = j;
+					*(t1 + cnt) = i;
+					*(t2 + cnt) = j;
 					cnt++;
 				}
 			}
 		}
 	}
 	// printf(" %d",cnt);
-	bubbleSort(arr, arr2, cnt);
+	bubblesort(t1, t2, cnt);
 	for (i = 0; i < cnt; i++)
 	{
 		// Swap Velocities
-		vector temp = velocities[arr[i]];
-		velocities[arr[i]] = velocities[arr2[i]];
-		velocities[arr2[i]] = temp;
+		vector temp = velocities[t1[i]];
+		velocities[t1[i]] = velocities[t2[i]];
+		velocities[t2[i]] = temp;
 	}
 }
 
 void resolveCollisions_guided(int number_of_threads)
 {
-	int *arr = (int *)malloc(50000 * sizeof(int));
-	int *arr2 = (int *)malloc(50000 * sizeof(int));
+	int *t1 = (int *)malloc(50000 * sizeof(int));
+	int *t2 = (int *)malloc(50000 * sizeof(int));
 
 	int i, j, cnt = 0;
 	double dx, dy, dz, md;
@@ -223,21 +223,21 @@ void resolveCollisions_guided(int number_of_threads)
 #pragma omp critical
 				{
 
-					*(arr + cnt) = i;
-					*(arr2 + cnt) = j;
+					*(t1 + cnt) = i;
+					*(t2 + cnt) = j;
 					cnt++;
 				}
 			}
 		}
 	}
 	// printf(" %d",cnt);
-	bubbleSort(arr, arr2, cnt);
+	bubblesort(t1, t2, cnt);
 	for (i = 0; i < cnt; i++)
 	{
 		// Swap Velocities
-		vector temp = velocities[arr[i]];
-		velocities[arr[i]] = velocities[arr2[i]];
-		velocities[arr2[i]] = temp;
+		vector temp = velocities[t1[i]];
+		velocities[t1[i]] = velocities[t2[i]];
+		velocities[t2[i]] = temp;
 	}
 }
 
